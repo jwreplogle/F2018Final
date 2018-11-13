@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>JWR Scratch</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-indigo.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+
+	<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-card w3-theme">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Link 1</a>
+    <div class="w3-dropdown-hover w3-hide-small w3-theme">
+      <button class="w3-padding-large w3-button" title="More">Drop Down <i class="fa fa-caret-down"></i></button>     
+      <div class="w3-dropdown-content w3-bar-block w3-card-4 w3-theme">
+        <a href="#" class="w3-bar-item w3-button">Link 2</a>
+        <a href="#" class="w3-bar-item w3-button">Link 3</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top w3-blue" style="margin-top:46px">
+  <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Link</a>
+  <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Link2</a>
+  <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Link3</a>
+  
+</div>
+
+<!-- Content on page-->
+<!--<div class="w3-content w3-theme" style="max-width:1250px;margin-top:46px">-->
+<div class="w3-display-container w3-center w3-theme ">
+<img src="wookie.jpeg" style="width:100%"; alt="Wookie">
+<div class="w3-padding w3-display-topleft w3-text-black">Insert stuff here for top left</div>
+  <div class="w3-padding w3-display-topright">Top Right</div>
+  <div class="w3-padding w3-display-bottomleft">Bottom Left</div>
+  <div class="w3-padding w3-display-bottomright">Bottom Right</div>
+  <div class="w3-padding w3-display-topmiddle">Top Mid</div>
+  <div class="w3-padding w3-display-left">Left</div>
+  <div class="w3-padding w3-display-right">Right</div>
+  <div class="w3-padding w3-display-middle w3-text-black">Middle</div>
+  <div class="w3-padding w3-display-bottommiddle">Bottom Mid</div>
+
+</div>
+
+
+
+
+<script>
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else { 
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+
+// When the user clicks anywhere outside of the modal, close it
+var modal = document.getElementById('ticketModal');
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+</body>
+</html>
